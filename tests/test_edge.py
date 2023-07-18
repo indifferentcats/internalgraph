@@ -1,7 +1,7 @@
 import unittest
 import uuid
 
-from internalgraph import Edge, InternalGraph, Node
+from src.internalgraph_indifferentcats import Edge
 
 
 class BuildEdgesTestCase(unittest.TestCase):

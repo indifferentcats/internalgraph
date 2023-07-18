@@ -3,3 +3,5 @@ dist
 .idea
 .git
 venv
+/docs/build/doctrees/environment.pickle
+/docs/source/

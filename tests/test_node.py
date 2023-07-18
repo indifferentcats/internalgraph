@@ -1,8 +1,8 @@
 import unittest
 import uuid
 
-import internalgraph
-from internalgraph import Edge, InternalGraph, Node
+from src import internalgraph_indifferentcats
+from src.internalgraph_indifferentcats import Node
 
 
 class BuildNodesTestCase(unittest.TestCase):
@@ -39,7 +39,7 @@ class BuildNodesTestCase(unittest.TestCase):
                   "c": {"d": 3},
                   "e": [4, 5, 6]
                   }
-        left, right = internalgraph.BaseGraphElement.split_dict(
+        left, right = internalgraph_indifferentcats.BaseGraphElement.split_dict(
             in_dict=source, strip_list=["a", "e"]
         )
         self.assertEqual(left,

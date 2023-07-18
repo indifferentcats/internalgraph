@@ -10,4 +10,15 @@ build:
 	. venv/bin/activate && \
 	python -m build
 
-.PHONY: init test build
+docs:
+	. venv/bin/activate; \
+	mkdir docs; \
+	cd docs; \
+	sphinx-quickstart
+
+documentation: docs
+	. venv/bin/activate && \
+	cd docs && \
+	make html
+
+.PHONY: init test build documentation
